@@ -1,4 +1,4 @@
-# Red Team: Summary of Operations
+# Red-Team Summary
 
 ## Network Typology ##
 
