@@ -1,12 +1,13 @@
-#Table of Contents#
+# Blue Team: Summary of Operations #
+## Table of Contents ##
 
 * Network Topology
 * Description of Targets
 * Monitoring the Targets
 * Patterns of Traffic & Behavior
 * Suggestions for Going Further
-* 
-#Network Topology#
+
+## Network Topology ##
 
 The following machines were identified on the network:
 
@@ -19,11 +20,11 @@ The following machines were identified on the network:
 
 <img width="553" alt="186093586-2e8179b1-08aa-4c37-9513-7e2c2d8b3153" src="https://user-images.githubusercontent.com/100730516/186272917-354a3da5-223a-45d2-9158-bce6ee77c70d.png">
 
-#Description of Targets#
+## Description of Targets ##
 
 The target of this attack was: Target 1 (192.168.1.110). Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
-#Monitoring the Targets#
+## Monitoring the Targets ##
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
@@ -69,7 +70,7 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
 <img width="599" alt="CPU-Usage-Monitor" src="https://user-images.githubusercontent.com/100730516/186273105-337ea9af-8c91-4408-8dfa-6c9761af09ee.png">
 
-#Suggestions for Going Further (Optional)#
+# Suggestions for Going Further (Optional) #
   
 Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain how to implement each patch.
 
