@@ -1,6 +1,6 @@
 # Red Team: Summary of Operations
 
-Network Typology
+## Network Typology ##
 
 <img width="553" alt="Screenshot 2022-08-23 030424" src="https://user-images.githubusercontent.com/100730516/186093586-2e8179b1-08aa-4c37-9513-7e2c2d8b3153.png">
 
