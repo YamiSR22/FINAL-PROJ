@@ -17,13 +17,13 @@
 3. Exploitation
 
 <b>Exposed Services<b>
-*Nmap scan results for each machine reveal the below services and OS details:
+* Nmap scan results for each machine reveal the below services and OS details:
 
-*Command: $ nmap -sV 192.168.1.110
+* Command: $ nmap -sV 192.168.1.110
   
  <img width="515" alt="image (1)" src="https://user-images.githubusercontent.com/100730516/186098290-efab6522-84af-42bd-bf39-e7285429ee77.png">
 
-*This scan identifies the services below as potential points of entry:
+* This scan identifies the services below as potential points of entry:
 
 <b>Target 1<b>
 
@@ -56,11 +56,11 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 
 flag1.txt: {b9bbcb33e11b80be759c4e844862482d}
 
-*Exploit Used:
+* Exploit Used:
 
-*WPScan to enumerate users on the Target1 WordPress site.
+* WPScan to enumerate users on the Target1 WordPress site.
 
-*Command: $ wpscan --url 192.168.1.110/wordpress $ wpscan --url 192.168.1.110 --enumerate -u
+* Command: $ wpscan --url 192.168.1.110/wordpress $ wpscan --url 192.168.1.110 --enumerate -u
   
 <img width="423" alt="image (4)" src="https://user-images.githubusercontent.com/100730516/186098760-1bcb8389-9ad7-4651-8727-3cea05fc3b88.png">
 
