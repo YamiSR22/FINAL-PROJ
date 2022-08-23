@@ -34,7 +34,8 @@
 5. Port 445/TCP Open netbios-ssn
   
 <img width="494" alt="image (2)" src="https://user-images.githubusercontent.com/100730516/186098436-7b169fd5-c8c1-4e9e-9b20-f3b9a87567ca.png">
-  <img width="481" alt="image (3)" src="https://user-images.githubusercontent.com/100730516/186098578-7a0c88d3-a1a0-4126-aabe-c1dd87f1537c.png">
+  
+<img width="481" alt="image (3)" src="https://user-images.githubusercontent.com/100730516/186098578-7a0c88d3-a1a0-4126-aabe-c1dd87f1537c.png">
 
 ## Critical Vulnerabilites ##
   
@@ -112,7 +113,8 @@ Exploit Used:
   
  <img width="322" alt="image (8)" src="https://user-images.githubusercontent.com/100730516/186099494-a2aff39e-bc96-4e0b-a09e-ec15d8efa00d.png"> 
   
-  <img width="401" alt="image (9)" src="https://user-images.githubusercontent.com/100730516/186099575-724f1597-4a15-47cc-9ca6-53f1291cdb7e.png">
+  
+ <img width="401" alt="image (9)" src="https://user-images.githubusercontent.com/100730516/186099575-724f1597-4a15-47cc-9ca6-53f1291cdb7e.png">
 
 
 * Same exploits to gain Flag1 and Flag2.
