@@ -1,4 +1,4 @@
-# Blue Team: Summary of Operations #
+# Blue-Team Summary #
 ## Table of Contents ##
 
 * Network Topology
