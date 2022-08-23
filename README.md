@@ -20,6 +20,8 @@ Network Typology
 *Nmap scan results for each machine reveal the below services and OS details:
 
 *Command: $ nmap -sV 192.168.1.110
+  
+ <img width="515" alt="image (1)" src="https://user-images.githubusercontent.com/100730516/186098290-efab6522-84af-42bd-bf39-e7285429ee77.png">
 
 *This scan identifies the services below as potential points of entry:
 
@@ -30,6 +32,9 @@ Network Typology
 3. Port 111/TCP Open rcpbid
 4. Port 139/TCP Open netbios-ssn
 5. Port 445/TCP Open netbios-ssn
+  
+<img width="494" alt="image (2)" src="https://user-images.githubusercontent.com/100730516/186098436-7b169fd5-c8c1-4e9e-9b20-f3b9a87567ca.png">
+  <img width="481" alt="image (3)" src="https://user-images.githubusercontent.com/100730516/186098578-7a0c88d3-a1a0-4126-aabe-c1dd87f1537c.png">
 
 <b>Critical Vulnerabilites<b>
   
@@ -56,8 +61,8 @@ flag1.txt: {b9bbcb33e11b80be759c4e844862482d}
 *WPScan to enumerate users on the Target1 WordPress site.
 
 *Command: $ wpscan --url 192.168.1.110/wordpress $ wpscan --url 192.168.1.110 --enumerate -u
-
-
+  
+<img width="423" alt="image (4)" src="https://user-images.githubusercontent.com/100730516/186098760-1bcb8389-9ad7-4651-8727-3cea05fc3b88.png">
 
 Targeting the user michael
 
@@ -78,9 +83,12 @@ password: michael
 cd /var/www/html
 ls -l
 nano services.html
-
+  
+<img width="415" alt="image (7)" src="https://user-images.githubusercontent.com/100730516/186099164-3747f922-2d8d-493c-97f8-1cc4501a71dc.png">
 
 flag2.txt: {fc3fd5Bdcdad9ab23facac6e9a365e581c33}
+  
+<img width="210" alt="image (6)" src="https://user-images.githubusercontent.com/100730516/186098944-eed98eb0-f25b-4566-b8d8-8f928865462b.png">
 
 Exploit Used
 
@@ -94,10 +102,14 @@ cd /var/www
 ls -l
 cat flag2.txt
 
-
 flag3.txt: {afc01ab56b50591e7dccf93122770cd23}
 
 Exploit Used:
+  
+ <img width="322" alt="image (8)" src="https://user-images.githubusercontent.com/100730516/186099494-a2aff39e-bc96-4e0b-a09e-ec15d8efa00d.png"> 
+  
+  <img width="401" alt="image (9)" src="https://user-images.githubusercontent.com/100730516/186099575-724f1597-4a15-47cc-9ca6-53f1291cdb7e.png">
+
 
 Same exploits to gain Flag1 and Flag2.
 Capturing Flag3: Access the MYSQL database.
@@ -110,6 +122,8 @@ select * from wp_posts;
 
 
 flag4.txt: {715dea6c055b9fe3337544932F2941ce}
+  
+<img width="299" alt="image (11)" src="https://user-images.githubusercontent.com/100730516/186099830-8a19f41a-1370-4650-8a52-1f681e042a5b.png">
 
 Exploit Used:
 
@@ -131,6 +145,7 @@ On the Kali machine the wp_hashes.txt ran against John the Ripper to crack the h
 
 Command: - john wp_hashes.txt
 
+![image (12)](https://user-images.githubusercontent.com/100730516/186099901-78f826af-4e63-4b7d-9b91-05680d5731e9.png)
 
 
 Once the user Steven's password hash was crached, the next step was to SSH in the server as Steven. Under the user Steven, privileges will first be checked, and escalated to root by guessing common root passwords.
