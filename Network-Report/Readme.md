@@ -1,4 +1,4 @@
-##Network Analysis##
+#Network Analysis#
 
 <b>Time Thieves<b>
 
@@ -48,7 +48,7 @@ The traffic must be inspected to answer the following Network Report
 
 <img width="570" alt="Trojan-VirusTotal" src="https://user-images.githubusercontent.com/100730516/186276922-01a5411a-2958-42d1-825a-b756da4a5c62.png">
 
-##Vulnerable Windows Machines##
+#Vulnerable Windows Machines#
 
 The Security Team received reports of an infected Windows host on the network. They know the following:
 
