@@ -143,7 +143,7 @@ The logs and alerts generated during the assessment suggest that this network is
 
 <b>CPU Usage Monitor<b>
 
-<b>Patch: Virus or Malware Hardening**<b>
+<b>Patch: Virus or Malware Hardening<b>
 
   * Add or update current antivirus protection
 
