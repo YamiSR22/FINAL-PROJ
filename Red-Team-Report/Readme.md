@@ -140,7 +140,7 @@ Exploit Used:
 
 * Capture Flag4: Gained user credentials, cracked password with John the Ripper and used Python to gain root privileges.
 
-* Once gaining access to the database credentials as the user Michael from the wp-config.php file, the next step was to lift the username and password hasses using MYSQL.
+* Once gaining access to the database credentials as the user Michael from the wp-config.php file, the next step was to lift the username and password hashes using MYSQL.
 
 * The credentials were located in the wp_users table in the wordpress database. The usernames and passwords were copied and saved on the Kali machine in a file call wp_hashes.txt.
 
