@@ -158,7 +158,7 @@ Exploit Used:
 ![image (12)](https://user-images.githubusercontent.com/100730516/186099901-78f826af-4e63-4b7d-9b91-05680d5731e9.png)
 
 
-* Once the user Steven's password hash was crached, the next step was to SSH in the server as Steven. Under the user Steven, privileges will first be checked, and escalated to root by guessing common root passwords.
+* Once the user Steven's password hash was reached, the next step was to SSH in the server as Steven. Under the user Steven, privileges will first be checked, and escalated to root by guessing common root passwords.
 
 * Commands:
   * ssh steven@192.168.1.110
